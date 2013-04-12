@@ -15,6 +15,7 @@ goog.require('ww.mode.SimoneMode');
 goog.require('ww.mode.SongMode');
 goog.require('ww.mode.SpaceMode');
 goog.require('ww.mode.SynthMode');
+goog.require('ww.mode.FlipMode');
 goog.require('ww.util');
 
 /**
@@ -79,6 +80,8 @@ ww.mode.register('bowling', ww.mode.BowlingMode, 117, 8); // 01110101
 ww.mode.register('rocket', ww.mode.RocketMode, 69, 8); // 01000101
 ww.mode.register('donut', ww.mode.DonutMode, 150, 8); // 10010110
 ww.mode.register('burger', ww.mode.BurgerMode, 57, 8); // 00111001
+
+ww.mode.register('flip', ww.mode.FlipMode, 255, 8); // 11111111
 
 if (((window.location.href.indexOf('modes') >= 0) && DEBUG_MODE) ||
     ww.testMode) {
